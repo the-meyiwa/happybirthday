@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9efec">
+  <meta name="description" content="Happy birthday, Dorcas. Author, medical student, artist — and entirely herself.">
+  <meta property="og:title" content="Happy birthday, Dorcas.">
+  <meta property="og:description" content="A little celebration of an extraordinary person.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://dorcas-in-bloom.madselkie.chatgpt.site/assets/dorcas-red.webp">
+  <title>Happy birthday, Dorcas.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/blossom.svg">
+  <link rel="preload" href="assets/font-2.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/dorcas-red.webp" as="image">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/gsap.min.js"></script>
+  <script defer src="assets/ScrollTrigger.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <g id="flower"><g fill="currentColor" stroke="currentColor" stroke-width=".5"><path id="petal" d="M0 0C-16-8-24-29-11-32L0-27 9-32C23-29 17-8 0 0Z"/><use href="#petal" transform="rotate(72)"/><use href="#petal" transform="rotate(144)"/><use href="#petal" transform="rotate(216)"/><use href="#petal" transform="rotate(288)"/></g><g fill="#a15c6d"><circle r="3"/><circle cx="-5" cy="-7" r="1.3"/><circle cx="6" cy="-5" r="1.3"/><circle cx="8" cy="4" r="1.3"/><circle cx="-7" cy="5" r="1.3"/><circle cy="8" r="1.3"/></g></g>
+  </defs></svg>
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to the celebration</a>
+  <header class="site-header">
+    <a class="monogram" href="#home" aria-label="Dorcas, back to top"><svg viewBox="-36 -36 72 72" aria-hidden="true"><use href="#flower"/></svg><span>D.</span></a>
+    <span class="header-note">A CELEBRATION OF YOU</span>
+    <div class="header-right"><nav aria-label="Main navigation"><a href="#her-world">Her world</a><a href="#moments">In motion <span aria-hidden="true">↗</span></a></nav><button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause animations" title="Pause animations"><svg viewBox="0 0 20 20" aria-hidden="true"><path class="pause-icon" d="M7 5v10M13 5v10"/><path class="play-icon" d="m7 5 8 5-8 5Z"/></svg></button></div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-halo" aria-hidden="true"></div>
+      <svg class="branch hero-branch" viewBox="0 0 500 420" aria-hidden="true">
+        <g fill="none" stroke="#c99fa5" stroke-linecap="round"><path d="M510 15C374 25 399 138 299 176S201 272 118 331" stroke-width="3"/><path d="M410 70C352 56 328 85 305 99M335 156C370 214 326 273 339 318M259 201C210 162 169 175 148 153M191 269C143 250 92 254 61 228M280 185C286 111 252 82 251 46" stroke-width="1.5"/><path d="m148 153-36-12m36 12-4-38m195 165 31 24m-89-194-22-26"/></g>
+        <g color="#edc1cb"><use href="#flower" transform="translate(306 101) rotate(-15) scale(.72)"/><use href="#flower" transform="translate(366 211) rotate(25) scale(.88)"/><use href="#flower" transform="translate(250 48) rotate(10) scale(.67)"/><use href="#flower" transform="translate(149 154) rotate(-25) scale(.8)"/><use href="#flower" transform="translate(114 143) scale(.52)"/><use href="#flower" transform="translate(192 271) rotate(8) scale(.72)"/><use href="#flower" transform="translate(119 333) scale(.9)"/><use href="#flower" transform="translate(62 230) scale(.48)"/><use href="#flower" transform="translate(339 319) scale(.56)"/></g>
+        <g fill="#d9a9b3"><ellipse cx="259" cy="83" rx="5" ry="9" transform="rotate(-25 259 83)"/><ellipse cx="146" cy="114" rx="5" ry="8"/><ellipse cx="371" cy="306" rx="5" ry="8" transform="rotate(-30 371 306)"/></g>
+      </svg>
+      <div class="hero-copy">
+        <p class="eyebrow hero-intro"><span class="tiny-line"></span> A BIRTHDAY PORTRAIT</p>
+        <h1 id="hero-title"><span class="title-mask"><span class="birthday-line">Happy birthday,</span></span><span class="title-mask name-mask"><span class="name-line">Dorcas<span class="name-dot">.</span></span></span></h1>
+        <p class="hero-description">A brilliant mind. A creative soul.<br>Entirely, unmistakably you.</p>
+        <a class="explore-link" href="#her-world"><span>Step into her world</span><span class="arrow-circle" aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="portrait-outline" aria-hidden="true"></div>
+        <div class="portrait-shadow" aria-hidden="true"></div>
+        <figure class="hero-portrait"><div class="portrait-image"><img src="assets/dorcas-red.webp" alt="Dorcas in a floral dress, holding up two peace signs in warm red light" fetchpriority="high" width="720" height="1280"></div><figcaption><span>DORCAS</span><span>IN HER ELEMENT</span></figcaption></figure>
+        <div class="portrait-flower" aria-hidden="true"><svg viewBox="-40 -40 80 80"><use href="#flower"/></svg></div>
+        <span class="handwritten-note">one of a kind.</span>
+      </div>
+      <div class="hero-bottom"><a href="#her-world" class="scroll-hint"><span class="scroll-track" aria-hidden="true"><span></span></span> SCROLL TO EXPLORE</a><span class="hero-bottom-note">AUTHOR · MEDICAL STUDENT · ARTIST</span><span class="edition">01 — 03</span></div>
+    </section>
+    <div class="ribbon" aria-hidden="true"><div class="ribbon-track"><span>Creative</span><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg><span>Caring</span><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg><span>Laser-focused</span><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg><span>Passionate</span><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg><span>Creative</span><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg><span>Caring</span><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg><span>Laser-focused</span><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg><span>Passionate</span><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg></div></div>
+    <section class="her-world" id="her-world" aria-labelledby="world-title">
+      <div class="section-top reveal"><span class="eyebrow">02 / THE PERSON</span><span class="small-flower" aria-hidden="true"><svg viewBox="-36 -36 72 72"><use href="#flower"/></svg></span></div>
+      <div class="world-grid">
+        <div class="world-visual"><div class="world-image-wrap"><img src="assets/dorcas-portrait.webp" alt="A close-up portrait of Dorcas wearing a soft fur hat" loading="lazy" width="720" height="1280"></div><span class="photo-index">A PORTRAIT OF DORCAS / 02</span><svg class="world-flower" viewBox="-40 -40 80 80" aria-hidden="true"><use href="#flower"/></svg></div>
+        <div class="world-copy"><h2 id="world-title" class="reveal">Many sides.<br><em>One Dorcas.</em></h2>
+          <div class="roles">
+            <div class="role reveal"><span class="role-number">01</span><h3>Author</h3><span class="role-detail">A way with words.</span></div>
+            <div class="role reveal"><span class="role-number">02</span><h3>Medical student</h3><span class="role-detail">A mind that goes deeper.</span></div>
+            <div class="role reveal"><span class="role-number">03</span><h3>Artist</h3><span class="role-detail">Creative. Laser-focused.</span></div>
+          </div>
+          <p class="world-description reveal">One of the smartest people you’ll meet.<br>Just as caring as she is passionate.</p>
+        </div>
+      </div>
+    </section>
+    <section class="moments" id="moments" aria-labelledby="moments-title">
+      <div class="section-top reveal"><span class="eyebrow">03 / IN MOTION</span><span class="eyebrow moment-tag">A FEW MOMENTS, ALL HER.</span></div>
+      <div class="moments-heading"><h2 id="moments-title" class="reveal">The little things.<br><em>The whole personality.</em></h2><p class="reveal">Some things are better<br>seen in motion.</p></div>
+      <div class="film-gallery">
+        <button class="film-card film-one" type="button" data-film="one" aria-label="Play Dorcas’s first video with sound"><span class="film-image"><video muted loop playsinline preload="none" poster="assets/moment-one.webp" data-src="assets/moment-one.mp4" aria-label="Dorcas’s first video"></video><span class="film-overlay"></span><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg></span><span class="film-view">PLAY WITH SOUND <span aria-hidden="true">↗</span></span></span><span class="film-caption"><span>01 / DORCAS</span><span>00:12</span></span></button>
+        <div class="gallery-center" aria-hidden="true"><svg viewBox="-40 -40 80 80"><use href="#flower"/></svg><span>her,<br><em>unfiltered.</em></span><div class="gallery-line"></div></div>
+        <button class="film-card film-two" type="button" data-film="two" aria-label="Play Dorcas’s second video with sound"><span class="film-image"><video muted loop playsinline preload="none" poster="assets/moment-two.webp" data-src="assets/moment-two.mp4" aria-label="Dorcas’s second video"></video><span class="film-overlay"></span><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg></span><span class="film-view">PLAY WITH SOUND <span aria-hidden="true">↗</span></span></span><span class="film-caption"><span>02 / DORCAS</span><span>00:10</span></span></button>
+      </div>
+    </section>
+    <section class="finale" aria-labelledby="finale-title"><div class="finale-ring" aria-hidden="true"></div><svg class="finale-blossom" viewBox="-40 -40 80 80" aria-hidden="true"><use href="#flower"/></svg><span class="eyebrow reveal">HERE’S TO YOU.</span><h2 id="finale-title" class="reveal">Happy birthday,<br><em>Dorcas.</em></h2><p class="reveal">Keep being exactly who you are.</p><a class="back-to-top" href="#home">BACK TO THE BEGINNING <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer><a href="#home" aria-label="Dorcas, back to top">D.</a><span>AN ENTIRE PAGE, JUST FOR YOU.</span><svg viewBox="-36 -36 72 72" aria-hidden="true"><use href="#flower"/></svg></footer>
+  <dialog class="film-dialog" aria-label="Dorcas’s video"><button class="dialog-close" aria-label="Close video" type="button">Close <span aria-hidden="true">×</span></button><video controls playsinline preload="none"></video></dialog>
+</body>
+</html>
